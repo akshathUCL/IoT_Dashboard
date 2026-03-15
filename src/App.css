@@ -1,0 +1,246 @@
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+margin:0;
+}
+
+/* Dashboard 宽度增加 */
+
+.dashboard{
+max-width:1500px;
+margin:0 auto;
+padding:20px 10px;
+box-sizing:border-box;
+}
+
+/* 标题 */
+
+h1{
+text-align:center;
+color:#38bdf8;
+margin-bottom:20px;
+font-size:28px;
+letter-spacing:1px;
+}
+
+h2{
+font-size:20px;
+margin-bottom:10px;
+}
+
+h3{
+font-size:16px;
+margin-bottom:10px;
+}
+
+/* 顶部统计 */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:16px;
+margin-bottom:22px;
+justify-content:center;
+}
+
+.statCard{
+background:#1e293b;
+padding:14px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 0 10px rgba(56,189,248,0.25);
+font-size:14px;
+}
+
+.statNumber{
+font-size:26px;
+color:#38bdf8;
+font-weight:bold;
+margin-top:4px;
+}
+
+/* 主布局 */
+
+.mainGrid{
+display:grid;
+
+grid-template-columns:1fr 1fr 1fr 1fr;
+grid-template-rows:260px 260px 260px;
+
+gap:18px;
+align-items:stretch;
+width:100%;
+}
+
+/* 图表 */
+
+.chart{
+background:#1e293b;
+padding:16px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(56,189,248,0.25);
+height:100%;
+display:flex;
+flex-direction:column;
+}
+
+.chart canvas{
+height:200px !important;
+}
+
+/* 卡片 */
+
+.card{
+background:#1e293b;
+padding:16px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(56,189,248,0.25);
+font-size:13px;
+line-height:1.5;
+height:100%;
+display:flex;
+flex-direction:column;
+}
+
+/* Grid 位置 */
+
+.peopleTraffic{
+grid-column:1;
+grid-row:1;
+}
+
+.genderChart{
+grid-column:2;
+grid-row:1;
+}
+
+.temperatureChart{
+grid-column:1;
+grid-row:2;
+}
+
+.humidityChart{
+grid-column:2;
+grid-row:2;
+}
+
+.ageChart{
+grid-column:1;
+grid-row:3;
+}
+
+.adTriggerChart{
+grid-column:2;
+grid-row:3;
+}
+
+/* 右侧 */
+
+.adRules{
+grid-column:3;
+grid-row:1 / span 3;
+overflow-y:auto;
+}
+
+.latestEvent{
+grid-column:4;
+grid-row:1;
+min-height:260px;
+}
+
+.recentEvents{
+grid-column:4;
+grid-row:2 / span 2;
+
+display:flex;
+flex-direction:column;
+
+margin-top:6px;
+}
+
+/* Recent Events 表格 */
+
+.recentEvents table{
+min-width:100%;
+max-height:120px;
+overflow:auto;
+display:block;
+}
+
+/* 表格 */
+
+table{
+width:100%;
+border-collapse:collapse;
+font-size:12px;
+margin-top:8px;
+table-layout:auto;
+}
+
+th{
+color:#38bdf8;
+text-align:left;
+padding:6px;
+font-size:13px;
+}
+
+td{
+padding:4px;
+border-bottom:1px solid #334155;
+white-space:nowrap;
+}
+
+/* AdRules 表格 */
+
+.adRules table{
+min-width:100%;
+}
+
+/* 广告展示 */
+
+.adDisplay{
+margin-top:12px;
+padding-top:10px;
+border-top:1px solid #334155;
+text-align:center;
+}
+
+/* 广告图片 */
+
+.adImage{
+
+width:180px;
+max-height:110px;
+
+object-fit:contain;
+
+border-radius:10px;
+
+box-shadow:0 0 10px rgba(56,189,248,0.35);
+
+margin:10px auto;
+
+display:block;
+
+background:#0f172a;
+padding:6px;
+
+}
+
+/* Camera */
+
+.cameraImage{
+
+width:100%;
+max-height:140px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+margin-top:10px;
+
+box-shadow:0 0 10px rgba(56,189,248,0.35);
+
+}
