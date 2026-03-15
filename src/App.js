@@ -277,7 +277,7 @@ function App() {
 
   }
 
-}, [latest, ads]);
+}, [latest, ads, manualOverride]);
 
   const currentAd = overrideAd ? overrideAd : (ads.length > 0 ? ads[adIndex] : null);
 
